@@ -4,9 +4,15 @@ const app = express();
 
 
 //routes
+
+app.get('/', (req,res) => {
+    res.send("Welcome!")
+});
+
+
 app.get('/hello', (req, res) => {
     res.send("Task Manager says hello!");
-})
+});
 
 
 
