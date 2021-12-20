@@ -1,1 +1,16 @@
-console.log('Task Manager App')
+const express = require('express');
+const app = express();
+
+
+
+//routes
+app.get('/hello', (req, res) => {
+    res.send("Task Manager says hello!");
+})
+
+
+
+const port = 3000; 
+
+app.listen(port, console.log(`SERVER IS LISTENING ON ${port}...`));
+
